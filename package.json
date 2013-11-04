@@ -1,0 +1,41 @@
+{
+  "name": "hubot-google-hangouts",
+  "description": "Adds 'hangout me' command to start a Google Hangout",
+  "version": "0.5.0",
+  "author": "Andy Lindeman <andy@andylindeman.com>",
+  "license": "MIT",
+
+  "keywords": [
+    "hubot",
+    "hubot-scripts",
+    "hangout",
+    "hangouts"
+  ],
+
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/alindeman/hubot-google-hangouts.git"
+  },
+
+  "bugs": {
+    "url": "https://github.com/alindeman/hubot-google-hangouts/issues"
+  },
+
+  "dependencies": {
+    "coffee-script": "~1.6",
+    "googleapis": "~0.4"
+  },
+
+  "devDependencies": {
+    "mocha": "~1.14.0",
+    "chai": "~1.8.1",
+    "sinon-chai": "~2.4.0",
+    "sinon": "~1.7.3"
+  },
+
+  "main": "index.coffee",
+
+  "scripts": {
+    "test": "script/test"
+  }
+}
