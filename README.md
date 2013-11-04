@@ -1,35 +1,23 @@
-# Hubot Example
+# Hubot Google Hangouts
 
-An example script package for Hubot
+```
+[alindeman] hubot: hangout me
+[hubot] I've started a hangout titled 'Hangout':
+        https://plus.google.com/hangouts/_/calendar/abc.123
+        (you may need to add ?authuser=1 if you're signed into multiple accounts)
+```
 
-[![Build Status](https://travis-ci.org/hubot-scripts/hubot-example.png)](https://travis-ci.org/hubot-scripts/hubot-example)
+## Setup
 
-## Directory Structure
+The setup required is unfortunately non-trivial because the only reliable way
+to generate a hangout URL (possibly scoped to a Google Apps organization, if
+you're using Google Apps) is through Google Calendar.
 
-Using the common directory structure for hubot script packages it will be easy
-to manage and allow others to easily contribute to your package.
+All the gory details are in the [comment at the top of
+hangouts.coffee](https://github.com/alindeman/hubot-google-hangouts/blob/master/src/hangouts.coffee).
 
-### script
+## Improvements
 
-This directory is home to a couple of development scripts; `bootstrap` and `test`
-they're used to bootstrap the development environment and run tests
-respectively.
-
-### src
-
-This directory is home to the actual hubot scripts in the package. Your
-`index.coffee` entry point will load the scripts from this directory.
-
-### test
-
-This directory is home to any tests you write for your scripts. This example
-package uses Mocha, Chai and Sinon to manage writing tests.
-
-## Advantages of Building a Package
-
-Some of the advantages of building an npm package for your hubot script(s) are:
-
-* You don't need to rely on when hubot-scripts package is released.
-* You can specify dependencies in the `package.json` rather than have users
-  manually specify them
-* You can easily add tests using your favourite frameworks and libraries
+Improvements welcomed. Please file an
+[issue](https://github.com/alindeman/hubot-google-hangouts/issues) or pull
+request.
