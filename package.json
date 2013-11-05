@@ -1,7 +1,7 @@
 {
   "name": "hubot-google-hangouts",
   "description": "Adds 'hangout me' command to start a Google Hangout",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "author": "Andy Lindeman <andy@andylindeman.com>",
   "license": "MIT",
 
