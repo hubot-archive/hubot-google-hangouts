@@ -9,7 +9,8 @@
 
 ## Installation
 
-1. Add `"hubot-google-hangouts"` to your hubot's `package.json`
+1. Add `"hubot-google-hangouts"` to your hubot's `package.json`. The
+   latest version is available through [npm](https://npmjs.org/package/hubot-google-hangouts)
 2. `npm install`
 3. Add `"hubot-google-hangouts"` to your hubot's `external-scripts.json`
 4. Set the [required configuration options](https://github.com/alindeman/hubot-google-hangouts/blob/master/src/hangouts.coffee)
