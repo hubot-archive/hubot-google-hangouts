@@ -7,6 +7,13 @@
         (you may need to add ?authuser=1 if you're signed into multiple accounts)
 ```
 
+## Installation
+
+1. Add `"hubot-google-hangouts"` to your hubot's `package.json`
+2. `npm install`
+3. Add `"hubot-google-hangouts"` to your hubot's `external-scripts.json`
+4. Set the [required configuration options](https://github.com/alindeman/hubot-google-hangouts/blob/master/src/hangouts.coffee)
+
 ## Setup
 
 The setup required is unfortunately non-trivial because the only reliable way
