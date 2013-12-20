@@ -3,8 +3,8 @@
 ```
 [alindeman] hubot: hangout me
 [hubot] I've started a hangout titled 'Hangout':
-        https://plus.google.com/hangouts/_/calendar/abc.123
-        (you may need to add ?authuser=1 if you're signed into multiple accounts)
+        Primary account: https://plus.google.com/hangouts/_/calendar/abc.123
+        Secondary account: https://plus.google.com/hangouts/_/calendar/abc.123?authuser=1
 ```
 
 ## Installation
