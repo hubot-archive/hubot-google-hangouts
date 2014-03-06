@@ -61,12 +61,17 @@ module.exports = (robot) ->
     description = "Requested by #{msg.message.user.name} in #{msg.message.user.room}"
 
     createCalendarEvent msg, summary, description, (err, event) ->
+      email = msg.user.email_address
+      
       if err
         msg.send "I'm sorry. Something went wrong and I wasn't able to create a hangout :("
       else
         response  = "I've started a hangout titled '#{summary}'\n"
-        response += "Primary account: #{event.hangoutLink}\n"
-        response += "Secondary account: #{event.hangoutLink}?authuser=1"
+        if email
+          response += "#{event.hangoutLink}?authuser=#{email}\n"
+        else
+          response += "Primary account: #{event.hangoutLink}\n"
+          response += "Secondary account: #{event.hangoutLink}?authuser=1"
         msg.send response
 
   createCalendarEvent = (msg, summary, description, callback) ->
