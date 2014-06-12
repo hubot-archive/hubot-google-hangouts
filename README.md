@@ -2,9 +2,7 @@
 
 ```
 [alindeman] hubot: hangout me
-[hubot] I've started a hangout titled 'Hangout':
-        Primary account: https://plus.google.com/hangouts/_/calendar/abc.123
-        Secondary account: https://plus.google.com/hangouts/_/calendar/abc.123?authuser=1
+[hubot] I've started a hangout titled 'Hangout': https://plus.google.com/hangouts/_/example.com/123457
 ```
 
 ## Installation
@@ -15,14 +13,9 @@
 3. Add `"hubot-google-hangouts"` to your hubot's `external-scripts.json`
 4. Set the [required configuration options](https://github.com/alindeman/hubot-google-hangouts/blob/master/src/hangouts.coffee)
 
-## Setup
+## Configuration
 
-The setup required is unfortunately non-trivial because the only reliable way
-to generate a hangout URL (possibly scoped to a Google Apps organization, if
-you're using Google Apps) is through Google Calendar.
-
-All the gory details are in the [comment at the top of
-hangouts.coffee](https://github.com/alindeman/hubot-google-hangouts/blob/master/src/hangouts.coffee).
+* `HUBOT_GOOGLE_HANGOUTS_DOMAIN`: Google Apps domain used as a scope for Hangouts.
 
 ## Improvements
 
