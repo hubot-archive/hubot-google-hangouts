@@ -11,7 +11,7 @@
 hangoutsDomain = process.env.HUBOT_GOOGLE_HANGOUTS_DOMAIN
 
 module.exports = (robot) ->
-  robot.respond /hangouts?( me)?\s*"?(.*?)"?$/, (msg) ->
+  robot.respond /hangouts?( me)?\s*"?(.*?)"?$/i, (msg) ->
     return if missingEnvironment(msg)
 
     console.log msg.match
